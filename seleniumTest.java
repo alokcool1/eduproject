@@ -13,7 +13,7 @@ public class seleniumTest {
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
                 WebDriver driver = new ChromeDriver(chromeOptions);
-                driver.get("http://localhost:32768");
+                driver.get("http://localhost:80");
                 WebElement about = driver.findElement(By.id("About Us"));
                 about.click();
                 Thread.sleep(1000);
